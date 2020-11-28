@@ -1,0 +1,14 @@
+#What's the Word
+import random
+def FunGame():
+    questions=['k_l_','s_i_e','h_a_p_','m_b_e','_ri_k_t','f__t']
+    Answers={'k_l_':'kill','s_i_e':'smile','h_a_p_':'happy','m_b_e':'mobile','_ri_k_t':'cricket','f__t':'foot'}
+    clue=random.choice (questions)
+    print("Fill the correct words in the blank:::  "+clue)
+    
+    answer=input("Enter your answer--->")
+    if answer.lower()==Answers.get(clue):
+        print("Great job !!! You Won...")
+    else:
+        print("ooopppsss !!! Try Again..")
+FunGame()
